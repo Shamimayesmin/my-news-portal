@@ -108,27 +108,6 @@ const displayAllNews = news =>{
 
 
 
-// const modalShowing = (_id) =>{
-//     const url = `https://openapi.programming-hero.com/api/news/category/${_id}`
-//     fetch(url)
-//     .then(res => res.json())
-//     .then(data =>showModalDetails (data.data))
-// }
-
-// const showModalDetails = (title,image_url) =>{
-// //   console.log(details[0])
-
-//    const modal = document.getElementById('modal-body')
-
-//    // modalBoday.innerHTML = '';
-//    modal.innerHTML = `
-    
-//    <p class="py-4">${title >20? title.slice(0,20) +'...' :title}</p>
-//    <img class="h-60 w-60" src ='${image_url}'>
-//    `;
-// }
-
-
 
 
 const showModal = (title,image_url,total_view)  => {

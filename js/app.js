@@ -70,13 +70,13 @@ const displayAllNews = news =>{
         newsDiv.classList.add('news')
         newsDiv.innerHTML = ''
 
-        const {category_id,details,image_url,thumbnail_url,title,author, published_date,rating,img,name,total_view} = item
+        const {details,image_url,thumbnail_url,title,author, published_date,rating,img,name,total_view} = item
 
         newsDiv.innerHTML = `
         <div class="card card-side bg-slate-100	 shadow-xl mt-8">
         
             
-            <figure><img class="w-80 h-full " src="${thumbnail_url}" alt="Movie"></figure>
+            <figure><img class="w-full h-full " src="${thumbnail_url}" alt="Movie"></figure>
             <div class="card-body">
             <h2 class="card-title">${title}</h2>
                 
@@ -87,7 +87,7 @@ const displayAllNews = news =>{
                 <p class='text-2xl mt-5 '>👁️‍🗨️: ${rating.number ? rating.number :'No data found'}M</p>
                 
                 </div>
-                <h6 class=''>${author.published_date}</h6>
+                <h6>${author.published_date}</h6>
                 <div class="card-actions justify-end">
 
                 

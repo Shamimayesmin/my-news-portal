@@ -73,7 +73,7 @@ const displayAllNews = news =>{
         const {category_id,details,image_url,thumbnail_url,title,author, published_date,rating,img,name,total_view} = item
 
         newsDiv.innerHTML = `
-        <div class="card card-side bg-base-100 shadow-xl mt-8">
+        <div class="card card-side bg-slate-100	 shadow-xl mt-8">
         
             
             <figure><img class="w-80 h-full " src="${thumbnail_url}" alt="Movie"></figure>

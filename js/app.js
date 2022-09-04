@@ -52,16 +52,6 @@ const displayAllNews = news =>{
 
     document.getElementById('total-news').innerHTML = news.length
 
-//    // spinner
-// const spinner = document.getElementById('spinner')
-    
-//     if(spinner === true){
-        
-//         spinner.classList.remove('hidden')
-//         return
-//     }
-    
-
 
 
 
@@ -80,7 +70,7 @@ const displayAllNews = news =>{
         <div class="card lg:card-side bg-slate-100 shadow-xl mt-8">
         
             
-            <figure><img class="w-full h-full" src="${thumbnail_url}" alt="Movie"></figure>
+            <figure><img class="w-80 h-full" src="${thumbnail_url}" alt="Movie"></figure>
             <div class="card-body">
             <h2 class="card-title">${title}</h2>
                 
@@ -89,6 +79,7 @@ const displayAllNews = news =>{
                 <img class='w-10 h-10 rounded-2xl mt-5' src='${author.img}'> 
                 <p class='font-semibold mt-5'>${author.name? author.name :'Not available'}</p>
                 <p class='text-2xl mt-5 '>👁️‍🗨️: ${rating.number ? rating.number :'No data found'}M</p>
+                
                 
                 </div>
                 <h6>${author.published_date}</h6>
@@ -126,15 +117,16 @@ const showModal = (title,image_url,total_view)  => {
     <img class="h-60 w-60" src ='${image_url}'>
     <p class="py-4 font-semibold"> Title : ${title >20? title.slice(0,20) +'...' :title}</p>
     <p>Total View : ${total_view ? total_view : 'no data found'}K</p>
+    
     `;
     
-    // modalContainer.appendChild(modalDiv)
+   
 }
 
 
 
 
-// displayNewsDetails()
+
 loadAllNewsDetail()
 
 

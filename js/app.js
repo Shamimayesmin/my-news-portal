@@ -82,7 +82,7 @@ const displayAllNews = news =>{
                 
                 
                 </div>
-                <h6>${author.published_date}</h6>
+                <h6 class="mr-20 mb-10">${author.published_date}</h6>
                 <div class="card-actions justify-end">
 
                 

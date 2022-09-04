@@ -14,8 +14,7 @@ const displayCategory = items => {
 
 
 //spinner    
-         
-        
+    
 
     
   items.forEach( category =>{
@@ -31,13 +30,10 @@ const displayCategory = items => {
             itemsContainer.appendChild(li)
     })
     
-
+    i
 }
 
 
-// document.getElementById('add-spinner').addEventListener('click',function(){
-//     
-// })
 
 
 const loadAllNewsDetail= (category_id) => {
@@ -56,10 +52,18 @@ const displayAllNews = news =>{
 
     document.getElementById('total-news').innerHTML = news.length
 
-   // spinner
-    const spinner = document.getElementById('spinner')
+//    // spinner
+// const spinner = document.getElementById('spinner')
+    
+//     if(spinner === true){
+        
+//         spinner.classList.remove('hidden')
+//         return
+//     }
+    
 
-    spinner.classList.remove('hidden')
+
+
 
     const newsContainer = document.getElementById('news-container')
         newsContainer.innerHTML =''
@@ -102,6 +106,7 @@ const displayAllNews = news =>{
         newsContainer.appendChild(newsDiv)
     })
     // stop spinner
+    
     spinner.classList.add('hidden')
     
 }

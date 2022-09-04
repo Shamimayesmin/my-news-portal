@@ -5,7 +5,7 @@ const loadAllCategoris = () => {
     fetch(url)
     .then(res => res.json())
     .then(data =>displayCategory(data.data.news_category) )
-    
+    .catch(error => console.log(error))
 }
 
 const displayCategory = items => {
@@ -30,7 +30,7 @@ const displayCategory = items => {
             itemsContainer.appendChild(li)
     })
     
-    i
+    
 }
 
 
@@ -41,7 +41,7 @@ const loadAllNewsDetail= (category_id) => {
     fetch(url)
     .then(res => res.json())
     .then(data =>displayAllNews(data.data))
-    
+    .catch(error =>console.log(error))
     
 }
 
